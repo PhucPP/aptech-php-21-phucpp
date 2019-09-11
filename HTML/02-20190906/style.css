@@ -1,0 +1,54 @@
+h1 {
+text-align: center;
+color:white;
+}
+H2 {
+    text-align: center;
+    background-color:lightgrey;
+    padding:30px;
+}
+p {
+    font-family: 'Times New Roman';
+    font-size:15px;
+    color:white;
+}
+#linkfb  {
+    color:red;
+    font-family: arial;
+    background-color: yellow;
+}
+header {
+    background-color: darkblue;
+    padding:5px;
+}
+img {
+
+  margin-left:60px;
+}
+.quatrinhcongtac, .kynangcanhan, .hoatdong  {
+    border:darkblue  solid 5px;
+
+}
+aside {
+    display:flex;
+    flex-direction: column;
+    border: white solid 5px;
+    color:white;
+}
+article {
+    border:white solid 5px;
+    background-color:darkblue;
+    width: 90%;
+    color:white;
+    padding: 30px;
+}
+section {
+    background-color:darkblue;
+    display: flex;
+}
+footer {
+    text-align: center;
+    background: darkblue;
+    color:white;
+    padding: 30px;
+}
