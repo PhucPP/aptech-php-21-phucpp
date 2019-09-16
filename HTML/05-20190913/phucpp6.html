@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body class="d-flex flex-column justify-content-center" style="height:100vh">
+    <header class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Fixed Navbars</a>
+        <button class="navbar-toggler dropdown dropdown-toggle" type="button" data-toggle="collapse dropdown"
+            data-target="#hollyshit">
+            Hollyshit
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto" id="hollyshit">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item Disabled">
+                    <a class="nav-link" href="#">Disabled</a>
+                </li>
+            </ul>
+            <div class="navbar-nav ml-auto">
+                <div>
+                    <input  type="text" placeholder="tim kiem">
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container h-75 justify-content-center mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1>Sticky footer with fixed navbar</h1>
+                <p>Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with padding-top: 60px; on the main > .container.</p>
+                <h6>Back to <a href="#">the default sticky footer</a> minus the navbar.</h6>
+            </div>
+        </div>
+    </main>
+    <footer class="navbar bg-warning mt-auto">
+        <div class="navbar-nav">
+            <div class="col-12 align-items-center">
+                <p class="text-muted">Place sticky footer content here.</p>
+            </div>
+        </div>
+        
+    </footer>
+
+
+</body>
+
+</html>
