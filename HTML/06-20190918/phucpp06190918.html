@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #First,
+        #Second,
+        #Third {
+            height: 100%;
+            border: 1px solid black;
+            width: 200px;
+
+        }
+
+        #First {
+            background-color: blue;
+        }
+
+        #Second {
+            background-color: white;
+
+        }
+
+        #Third {
+            background-color: red;
+        }
+
+        @media screen and (max-width:1000px) {
+            #First {
+                background-color: red;
+
+            }
+
+            #Second {
+                background-color: yellow;
+
+            }
+
+            #Third {
+                background-color: black;
+
+            }
+
+            #thanthanh {
+                display: flex;
+
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #First {
+                background-color: white;
+            }
+
+            #Second {
+                background-color: red;
+
+            }
+
+            #Third {
+                background-color: blue;
+            }
+
+            #thanthanh {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    </style>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body style="height:100vh">
+    <div id="thanthanh" style="height:500px">
+        <div id="First"></div>
+        <div id="Second"></div>
+        <div id="Third"></div>
+    </div>
+</body>
+
+</html>

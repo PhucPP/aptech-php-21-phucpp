@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .First,
+        #Second,
+        #Third {
+            height: 100%;
+            border: 1px solid black;
+            width: 200px;
+
+        }
+
+        #First {
+            background-color: blue;
+        }
+
+        #Second {
+            background-color: white;
+
+        }
+
+        #Third {
+            background-color: red;
+        }
+
+        @media screen and (max-width:1000px) {
+            #First {
+                background-color: red;
+
+            }
+
+            #Second {
+                background-color: yellow;
+
+            }
+
+            #Third {
+                background-color: black;
+
+            }
+
+            #thanthanh {
+                display: flex;
+
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            #First {
+                background-color: white;
+            }
+
+            #Second {
+                background-color: red;
+
+            }
+
+            #Third {
+                background-color: blue;
+            }
+
+            #thanthanh {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    </style>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<body style="height:100vh">
+    <div class="container" style="height:100px">
+        <div class="row">
+            <div class="col-4 bg-warning h-100" style="height:100px"></div>
+            <div class="col-4 bg-warning" style="height:100px"></div>
+            <div class="col-4 bg-warning" style="height:100px"></div>
+        
+        </div>
+    </div>
+</body>
+
+</html>
