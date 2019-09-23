@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    </style>
+</head>
+
+<body style="height:100vh">
+    <div class="container h-25">
+        <div class="row h-100">
+            <div class="col-8 offset-2 d-flex flex-column justify-content-center align-items-center">
+                <img class="my-3" src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg"
+                    alt="boostraplogo">
+                <h2>Checkout form</h2>
+                <p class="d-flex justify-content-center align-items-center">Below is an example form built entirely with
+                    Bootstrap’s form controls. Each required form group has a validation state that can be triggered by
+                    attempting to submit the form without completing it.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h2>Billing address</h2>
+                    <div class="row Row__Name mb-3">
+                        <div class="col-6">
+                            <p class="mb-3">First Name</p>
+                            <input type="text" placeholder="First Name" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-3">Last Name</p>
+                            <input type="text" placeholder="Last Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2">Username</p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2">Email <span>(Optional)</span></p>
+                        <input type="text" class="form-control" placeholder="you@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2">Address</p>
+                        <input type="text" class="form-control" placeholder="1234 Main St">
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2">Address 2<span>(Optional)</span></p>
+                        <input type="text" class="form-control" placeholder="Apartment or suite">
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <p class="mb-2">Country</p>
+                            <select class="custom-select">
+                                <option>Choose...</option>
+                                <option>United State</option>
+                            </select>
+                        </div>
+                        <div class="col-4">
+                            <p class="mb-2">State</p>
+                            <select class="custom-select">
+                                <option>Choose...</option>
+                                <option>LA</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <p class="mb-4">Zip</p>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="checkboxshipping">
+                        <label for="checkboxshipping" class="custom-control-label">Shipping address is the same as my
+                            billing address</label>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                        <input type="checkbox" class="custom-control-input" id="checkboxinfor">
+                        <label for="checkboxinfor" class="custom-control-label">Save this information for next
+                            time</label>
+                    </div>
+                    <hr class="mb-4">
+                    <h3 class="">Payment</h3>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="radioscre" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="radioscre">Credit card</label>
+                    </div>
+
+                    
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="radiosdeb" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="radiosdeb">Debit card</label>
+                    </div>
+                    <div class="custom-control custom-radio mb-4">
+                        <input type="radio" id="radiospay" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="radiospay">Paypal</label>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 mb-4">
+                            <p class="mb-3">Name on card</p>
+                            <input type="text" placeholder="" class="form-control">
+                            <small class="text-muted">Full name as displayed on card</small>
+                        </div>
+                        <div class="col-6">
+                            <p class="mb-3">Credit card number</p>
+                            <input type="text" placeholder="" class="form-control">
+                        </div>
+                    </div>
+                    <button class=" mb-5 btn btn-primary btn-block ">Continue to checkout</button>
+                </div>
+                <div class="col-4">
+                    <h4 class="d-flex justify-content-between align-items-center>
+                        <span class=" text-muted">Your cart</span>
+                        <span class="badge badge-secondary ">3</span>
+                    </h4>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Product name</span>
+                            <span>$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Product name</span>
+                            <span>$12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Product name</span>
+                            <span>$12</span>
+                        </li>
+                    </ul>
+                    <div class="card d-flex flex-row justify-content-center">
+                        <input type="text" class="m-1 mx-0 p-0">
+                        <button class="btn btn-secondary m-1 mx-0 p-0">Redeem</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
