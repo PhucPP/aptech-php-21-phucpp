@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<p id="hehe"></p>
+<button onclick="phucDepTrai();">Phuc dep trai khong?</button>
+    
+    <script>
+    var thongTin  =  {
+        ten:"phucdeptrai",
+        namSinh: 25/08/1993,
+        gioiTinh:"nam",
+        depTraiKhong: function(aiDay){
+            return{
+                trangThai: "di nhien "+ aiDay +" rat dep trai"
+            }
+        }
+    }
+
+    console.log(thongTin.depTraiKhong('Phuc').trangThai)
+
+    function phucDepTrai()  {
+        document.getElementById("hehe").innerHTML= thongTin.depTraiKhong('Phuc').trangThai;
+    }
+    </script>
+
+
+</body>
+
+</html>

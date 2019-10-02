@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="turnOn();"> Turn on the light</button>
+
+    <img id="Light"
+        src="https://db1736767dbd5e7094bb-d61bbc5d0b342a54145a236e2d5d1ebf.ssl.cf4.rackcdn.com/Product-800x800/cee563a5-aedd-46af-9049-4a19374afa56.jpg"
+        alt="lighoff" style="width:200px; height:250px">
+
+    <button onclick="turnOff();"> Turn off the light</button>
+    <button onclick="onOff();"> Bat tat bong den</button>
+    <script>
+
+        function turnOn() {
+            document.getElementById('Light').src = 'https://img.pngio.com/incandescent-a-lamp-bulb-png-224_300.png'
+            document.getElementById('Light').src.style.width = '200px';
+            document.getElementById('Light').src.style.height = '250px';
+        }
+        function turnOff() {
+            document.getElementById('Light').src = 'https://db1736767dbd5e7094bb-d61bbc5d0b342a54145a236e2d5d1ebf.ssl.cf4.rackcdn.com/Product-800x800/cee563a5-aedd-46af-9049-4a19374afa56.jpg';
+            document.getElementById('Light').src.style.width = '200px';
+            document.getElementById('Light').src.style.height = '250px';
+        }
+        function onOff(); {
+            if (document.getElementById('Light').src == 'https://db1736767dbd5e7094bb-d61bbc5d0b342a54145a236e2d5d1ebf.ssl.cf4.rackcdn.com/Product-800x800/cee563a5-aedd-46af-9049-4a19374afa56.jpg') {
+                document.getElementById('Light').src = 'https://img.pngio.com/incandescent-a-lamp-bulb-png-224_300.png'
+
+            } else {
+                document.getElementById('Light').src = 'https://db1736767dbd5e7094bb-d61bbc5d0b342a54145a236e2d5d1ebf.ssl.cf4.rackcdn.com/Product-800x800/cee563a5-aedd-46af-9049-4a19374afa56.jpg'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

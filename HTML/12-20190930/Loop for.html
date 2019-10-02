@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width:100%" class="m-5" id="myDIV">
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>pass</th>
+        </tr>
+    </table>
+    <button onclick="themHang();">them hang day</button>
+    <button onclick="hienThi();">click vao day</button>
+    <script>
+        function themHang() {
+            var soId = [1, 2, 3, 4]
+            for (var i = 1; i < 2; i++) {
+                var text = "cot-" + i;
+                text2 = "cot-" + [i+1];
+                text3 = "cot-" + [i+2];
+                var aid = "<td id="+'"'+text+'"'+"></td> "+"<td id="+'"'+text2+'"'+"></td> "+"<td id="+'"'+text3+'"'+"></td>";
+                var cot = document.createElement("tr");
+                cot.innerHTML = aid;
+                document.getElementById("myDIV").appendChild(cot);
+            }
+        }
+        var cot = [6, 7, 8, 9];
+    function hienThi() {
+      for (var i = 1; i < cot.length; i++) {
+        var text = "cot-" + i;
+        document.getElementById(text).innerHTML = cot[i - 1];
+      }
+    } 
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width:100%" class="m-5" id="myDIV">
+    <tr>
+      <th>ID</th>
+      <th>name</th>
+      <th>pass</th>
+      <th>email</th>
+    </tr>
+    <tr>
+      <td id="cot-1"></td>
+      <td id="cot-2"></td>
+      <td id="cot-3"></td>
+      <td id="cot-4"></td>
+    </tr>
+  </table>
+  <button onclick="hienThi();">click vao day</button>
+  <button onclick="myFunction()">Try it</button>
+  <script>
+    var cot = [6, 7, 8, 9];
+    function hienThi() {
+      for (var i = 1; i < cot.length; i++) {
+        var text = "cot-" + i;
+        document.getElementById(text).innerHTML = cot[i - 1];
+      }
+    } 
+  </script>
+</body>
+
+</html>
